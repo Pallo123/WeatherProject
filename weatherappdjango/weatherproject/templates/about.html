@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static "cssweather.css" %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </head>
+  <body style ="background-color:#616161; color:white">
+    <div class="xyz">
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" style="color:#FF5733" href="#">
+      <h1><img src="{% static "cloud.jpg" %}" width="60" height="60" class="d-inline-block align-top" alt=":(">&nbsp;&nbsp;CityWeatherInfo</h1>
+    </a>
+    </nav>
+    </div>
+    <br>
+    <br>
+    <div class="bgc">
+<div class="img"><br><img src="{% static "cloud.jpg" %}" height="340px" width="340px" alt=""></div>
+    <div class="aboutus">
+    <h1>ABOUT US</h1>
+    <p>One of the first things you probably do every morning is look out the window to see what the weather is like.</p></div>
+    <div class="abt"><p> Looking outside and listening to the day’s forecast helps you decide what clothes you will wear and maybe even what you will do throughout the day.
+      Weather data should be open to anyone. Not many types of data can affect business decisions and personal everyday plans on the same
+       scale as weather does. There is no need to mention billions of dollars business and governments lose due to the extreme weather conditions
+        which are beyond our control.</p>
+       <p> However, most applications of accurate forecast and history for businesses are more humble yet
+        more practical for daily analysis and decision making. To name a few, they include analysis of impact of weather on the customers’
+        demand for retailers, planning of secure routes for transport companies; accurate evaluation of customers’ cases for insurers,
+         sensitive planning of energy consumption for householders, timely watering crops for farmers.</p>
+    <p>As a website, we are committed to delivering weather information 24 hours a day, 365 days a year, to approx all the platforms - responsive websites,
+     mobile and tablet applications as well as TV applications. Our forecasts go beyond providing people with information to
+      plan their daily activities. We are dedicated to delivering information so compelling it informs, satisfies and shapes
+      your world. It’s your weather when it really matters.</p>
+    <h6>This site was created by Pallavi. The datas were taken from openweathermap.org,</h6></div>
+    <br>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="foot">
+      <br>
+    <div class="alileft"> <h4><a href="{% url 'weather:about' %}">ABOUT US</a></h4></div>
+    <div class="alileft"> <h4><a href="{% url 'weather:index' %}">HOME</a>&nbsp;&nbsp;</h4></div>
+    <div class="alileft"> <h4><a href="https://www.instagram.com/pallavi_anurag/">CONTACT US</a>&nbsp;&nbsp;</h4></div>
+    <p>Weather Informations from:
+    <a href="https://openweathermap.org/">openweathermap.org</a></p>
+    </div>
+    </body>
+    </html>
